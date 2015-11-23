@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.thoughtworks.gauge.maven</groupId>
+    <artifactId>gauge-mvn-archetypes</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Gauge Maven Archetypes</name>
+    <description>Archetypes for creating Gauge projects with maven</description>
+    <url>https://github.com/getgauge/gauge-mvn-archetypes</url>
+
+    <modules>
+        <module>gauge-archetype-java</module>
+  </modules>
+
+    <organization>
+        <name>ThoughtWorks Inc.</name>
+        <url>https://www.thoughtworks.com</url>
+    </organization>
+
+    <properties>
+        <archetype.version>2.4</archetype.version>
+    </properties>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>${archetype.version}</version>
+            </extension>
+        </extensions>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- TODO -->
+            <!-- add mvn release plugin -->
+
+            <!-- TODO -->
+            <!-- add invoker plugin (?) -->
+
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>${archetype.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <developers>
+        <developer>
+            <name>Apoorva M</name>
+            <email>apoorva_rarefriend@yahoo.com</email>
+            <organization>Thoughtworks</organization>
+            <organizationUrl>http://thoughtworks.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Kashish Munjal</name>
+            <email>kashishmunjal64@gmail.com</email>
+            <organization>Thoughtworks</organization>
+            <organizationUrl>http://thoughtworks.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Mahendra Kariya</name>
+            <email>mahendrakariya@gmail.com</email>
+            <organization>Thoughtworks</organization>
+            <organizationUrl>http://thoughtworks.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Srikanth V</name>
+            <email>srikanth.ddit@gmail.com</email>
+            <organization>Thoughtworks</organization>
+            <organizationUrl>http://thoughtworks.com/</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>GNU Public License version 3.0</name>
+            <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git@github.com:getgauge/gauge-mvn-archetypes.git</connection>
+        <developerConnection>scm:git:git@github.com:getgauge/gauge-mvn-archetypes.git</developerConnection>
+        <url>git@github.com:getgauge/gauge-mvn-archetypes.git</url>
+    </scm>
+</project>

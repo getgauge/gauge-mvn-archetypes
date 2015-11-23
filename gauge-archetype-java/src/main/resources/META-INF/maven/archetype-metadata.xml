@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+        name="gauge-archetype-java">
+
+    <fileSets>
+        <fileSet>
+            <directory>src/test/java</directory>
+            <includes>
+                <include>StepImplementation.java</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory></directory>
+            <includes>
+                <include>manifest.json</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>specs</directory>
+            <includes>
+                <include>*.spec</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>env/default</directory>
+            <includes>
+                <include>*.properties</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+</archetype-descriptor>
