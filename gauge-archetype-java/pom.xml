@@ -9,11 +9,14 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.thoughtworks.gauge.maven</groupId>
     <artifactId>gauge-archetype-java</artifactId>
     <version>1.0</version>
     <name>Archetype - gauge-archetype-java</name>
     <description>Archetype for Gauge Java</description>
     <url>http://github.com/getgauge/gauge-mvn-archetypes</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 </project>
