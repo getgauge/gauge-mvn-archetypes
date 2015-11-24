@@ -9,7 +9,7 @@
     <fileSet>
       <directory>src/test/java</directory>
       <includes>
-        <include>StepImplementation.java</include>
+        <include>*.java</include>
       </includes>
     </fileSet>
 
@@ -17,14 +17,12 @@
       <directory></directory>
       <includes>
         <include>manifest.json</include>
+        <include>README.md</include>
       </includes>
     </fileSet>
 
     <fileSet>
       <directory>specs</directory>
-      <includes>
-        <include>*.spec</include>
-      </includes>
     </fileSet>
 
     <fileSet>
