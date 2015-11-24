@@ -69,12 +69,6 @@
                 </configuration>
             </plugin>
 
-            <!-- TODO -->
-            <!-- add mvn release plugin -->
-
-            <!-- TODO -->
-            <!-- add invoker plugin (?) -->
-
         </plugins>
 
         <pluginManagement>
