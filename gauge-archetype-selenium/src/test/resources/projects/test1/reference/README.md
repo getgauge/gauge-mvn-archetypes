@@ -37,7 +37,7 @@ This is where the java implementation of the steps would be implemented. Since t
 
 _We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
 
-- Create a new class called, say, `HelloWorld.java`
+- Create a new class called, say, `SampleTest.java`
 - Add the Step implementation in the class, an example is below:
 ```
 import com.thoughtworks.gauge.Gauge;
