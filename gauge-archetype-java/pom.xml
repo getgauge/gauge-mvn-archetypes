@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>gauge-archetype-java</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>Archetype - gauge-archetype-java</name>
     <description>Archetype for Gauge Java</description>
     <url>http://github.com/getgauge/gauge-mvn-archetypes</url>
