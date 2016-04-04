@@ -4,7 +4,7 @@ go get -d -u -v github.com/getgauge/gauge && go get github.com/tools/godep
 
 cd $GOPATH/src/github.com/getgauge/gauge && $GOBIN/godep restore
 
-cd $GOPATH/src/github.com/getgauge/gauge && go run build/make.go && go run build/make.go --install
+cd $GOPATH/src/github.com/getgauge/gauge && go run build/make.go && go run build/make.go --install --prefix=$GAUGE_ROOT
 
 go get -d -u -v github.com/getgauge/gauge-java
 
