@@ -14,6 +14,13 @@
     </fileSet>
 
     <fileSet>
+      <directory>src/test/java/driver</directory>
+      <includes>
+        <include>*.java</include>
+      </includes>
+    </fileSet>
+
+    <fileSet>
       <directory></directory>
       <includes>
         <include>manifest.json</include>
@@ -23,6 +30,9 @@
 
     <fileSet>
       <directory>specs</directory>
+      <includes>
+        <include>*.spec</include>
+      </includes>
     </fileSet>
 
     <fileSet>
