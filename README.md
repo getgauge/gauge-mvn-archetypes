@@ -1,5 +1,7 @@
 # gauge-mvn-archetype
 
+    One can create projects using several templates. This contains the template of Maven archetypes for Gauge.
+
 ##Maven archetypes for Gauge
 * gauge-archetype-java
 * gauge-archetype-selenium
