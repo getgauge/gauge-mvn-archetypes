@@ -7,7 +7,7 @@ To execute this specification, use
 
 * Navigate to "http://getgauge.io"
 
-Search for Gauge Documentation
-------------------------------
+Get Started
+-----------
 
 * Go to Gauge Get Started Page
