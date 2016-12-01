@@ -7,17 +7,24 @@ import org.openqa.selenium.WebElement;
 import static org.junit.Assert.assertTrue;
 
 public class StepImplementation {
+  @Step("Go to Gauge Get Started Page")
+  public void gotoGetStartedPage() throws InterruptedException {
+      WebElement getStartedButton = Driver.webDriver.findElement(By.xpath("//a[@class='link-get-started']"));
+      getStartedButton.click();
 
-    @Step("Navigate to <url>")
-    public void navigateTo(String url) {
-        Driver.webDriver.get(url);
-        assertTrue(Driver.webDriver.getTitle().contains("Gauge"));
-    }
+      Gauge.writeMessage("Page title is %s", Driver.webDriver.getTitle());
+  }
 
-    @Step("Go to Gauge Get Started Page")
-    public void gotoGetStartedPage() throws InterruptedException {
-        WebElement getStartedButton = Driver.webDriver.findElement(By.xpath("//*[@id=\"content\"]/section[1]/section/div[2]/a[1]"));
-        getStartedButton.click();
-        Gauge.writeMessage("Page title is ", Driver.webDriver.getTitle());
-    }
+  @Step("Ensure installation instructions are available")
+  public void ensureInstallationInstructionsAreAvailable() throws InterruptedException {
+      WebElement instructions = Driver.webDriver.findElement(By.xpath("//p[@class='instruction']"));
+      assertTrue(instructions!=null);
+  }
+
+  @Step("Open the Gauge homepage")
+  public void implementation1() {
+      String app_url = System.getenv("APP_URL");
+      Driver.webDriver.get(app_url + "/");
+      assertTrue(Driver.webDriver.getTitle().contains("Gauge"));
+  }
 }
