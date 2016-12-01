@@ -42,5 +42,11 @@
       </includes>
     </fileSet>
 
+    <fileSet>
+      <directory>env/chrome</directory>
+      <includes>
+        <include>*.properties</include>
+      </includes>
+    </fileSet>
   </fileSets>
 </archetype-descriptor>
