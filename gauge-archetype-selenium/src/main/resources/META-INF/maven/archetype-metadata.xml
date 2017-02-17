@@ -43,7 +43,7 @@
     </fileSet>
 
     <fileSet>
-      <directory>env/chrome</directory>
+      <directory>env/firefox</directory>
       <includes>
         <include>*.properties</include>
       </includes>

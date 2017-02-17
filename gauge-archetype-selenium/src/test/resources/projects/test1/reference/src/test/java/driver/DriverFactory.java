@@ -1,5 +1,8 @@
 package driver;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,16 +17,21 @@ public class DriverFactory {
 
         String browser = System.getenv("BROWSER");
         if (browser == null) {
-            return new FirefoxDriver();
+            ChromeDriverManager.getInstance().setup();
+            return new ChromeDriver();
         }
         switch (browser)
         {
             case "IE":
+                InternetExplorerDriverManager.getInstance().setup();
                 return new InternetExplorerDriver();
-            case "CHROME":
-                return new ChromeDriver();
-            default:
+            case "FIREFOX":
+                FirefoxDriverManager.getInstance().setup();
                 return new FirefoxDriver();
+            default:
+                ChromeDriverManager.getInstance().setup();
+                return new ChromeDriver();
+
         }
     }
 }
