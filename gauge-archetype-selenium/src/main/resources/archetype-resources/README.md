@@ -29,5 +29,5 @@ Read more about [Step implementations in Java](http://getgauge.io/documentation/
 * You can execute the specification as:
 
 ```
-mvn gauge:execute
+mvn test
 ```
