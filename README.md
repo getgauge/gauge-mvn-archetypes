@@ -2,17 +2,17 @@
 
 One can initialize Gauge projects using several templates as described [here](http://getgauge.io/documentation/user/current/getting_started/creating_a_gauge_project.html). This repo contains the Maven archetypes for Gauge.
 
-##Maven archetypes for Gauge
+## Maven archetypes for Gauge
 * gauge-archetype-java
 * gauge-archetype-selenium
 
-##To add a Maven Archetype for Gauge-Java
+## To add a Maven Archetype for Gauge-Java
 
 Step 1: Generate a maven archetype template with command
 ```
 mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-archetype -DgroupId=com.thoughtworks.gauge.maven -DartifactId=[Your archetype artifact ID] -Dversion=[Your archetype version]
 ```
-Naming convention for Gauge-Maven archetypes: 
+Naming convention for Gauge-Maven archetypes:
 ```
 Artifact ID: `gauge-archetype-[Name of archetype]`
 Group ID: `com.thoughtworks.gauge.maven`
