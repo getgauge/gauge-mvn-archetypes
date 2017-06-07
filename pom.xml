@@ -113,20 +113,8 @@
 
     <developers>
         <developer>
-            <name>Apoorva M</name>
-            <email>apoorva_rarefriend@yahoo.com</email>
-            <organization>Thoughtworks</organization>
-            <organizationUrl>http://thoughtworks.com/</organizationUrl>
-        </developer>
-        <developer>
             <name>Kashish Munjal</name>
             <email>kashishmunjal64@gmail.com</email>
-            <organization>Thoughtworks</organization>
-            <organizationUrl>http://thoughtworks.com/</organizationUrl>
-        </developer>
-        <developer>
-            <name>Mahendra Kariya</name>
-            <email>mahendrakariya@gmail.com</email>
             <organization>Thoughtworks</organization>
             <organizationUrl>http://thoughtworks.com/</organizationUrl>
         </developer>
