@@ -9,3 +9,5 @@ cd $GOPATH/src/github.com/getgauge/gauge && go run build/make.go && go run build
 go get -d -u -v github.com/getgauge/gauge-java
 
 cd $GOPATH/src/github.com/getgauge/gauge-java && go run make.go && go run make.go --install
+
+export PATH=$PATH:$GAUGE_ROOT/bin
