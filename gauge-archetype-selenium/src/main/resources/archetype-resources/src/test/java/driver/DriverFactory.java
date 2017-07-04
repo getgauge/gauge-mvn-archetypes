@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverFactory {
 
@@ -18,10 +19,16 @@ public class DriverFactory {
         String browser = System.getenv("BROWSER");
         if (browser == null) {
             ChromeDriverManager.getInstance().setup();
-            return new ChromeDriver();
+
+            ChromeOptions options = new ChromeOptions();
+            if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+                options.addArguments("--headless");
+                options.addArguments("--disable-gpu");
+            }
+
+            return new ChromeDriver(options);
         }
-        switch (browser)
-        {
+        switch (browser) {
             case "IE":
                 InternetExplorerDriverManager.getInstance().setup();
                 return new InternetExplorerDriver();
