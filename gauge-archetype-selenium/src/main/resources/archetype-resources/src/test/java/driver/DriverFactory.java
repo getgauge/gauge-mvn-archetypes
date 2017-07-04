@@ -17,17 +17,8 @@ public class DriverFactory {
     public static WebDriver getDriver() {
 
         String browser = System.getenv("BROWSER");
-        if (browser == null) {
-            ChromeDriverManager.getInstance().setup();
+        browser = (browser == null) ? "CHROME": browser;
 
-            ChromeOptions options = new ChromeOptions();
-            if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
-                options.addArguments("--headless");
-                options.addArguments("--disable-gpu");
-            }
-
-            return new ChromeDriver(options);
-        }
         switch (browser) {
             case "IE":
                 InternetExplorerDriverManager.getInstance().setup();
@@ -35,10 +26,17 @@ public class DriverFactory {
             case "FIREFOX":
                 FirefoxDriverManager.getInstance().setup();
                 return new FirefoxDriver();
+            case "CHROME":
             default:
-                ChromeDriverManager.getInstance().setup();
-                return new ChromeDriver();
-
+	            ChromeDriverManager.getInstance().setup();
+	
+	            ChromeOptions options = new ChromeOptions();
+	            if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+	                options.addArguments("--headless");
+	                options.addArguments("--disable-gpu");
+	            }
+	
+	            return new ChromeDriver(options);
         }
     }
 }
