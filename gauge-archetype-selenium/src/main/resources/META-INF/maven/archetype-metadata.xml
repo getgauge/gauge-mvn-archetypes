@@ -6,7 +6,7 @@
         name="gauge-archetype-selenium">
 
   <fileSets>
-    <fileSet>
+    <fileSet filtered="true" packaged="true">
       <directory>src/test/java</directory>
       <includes>
         <include>*.java</include>

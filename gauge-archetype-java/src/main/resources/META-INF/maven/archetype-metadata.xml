@@ -6,7 +6,7 @@
         name="gauge-archetype-java">
 
     <fileSets>
-        <fileSet>
+        <fileSet packaged="true" filtered="true">
             <directory>src/test/java</directory>
             <includes>
                 <include>StepImplementation.java</include>
