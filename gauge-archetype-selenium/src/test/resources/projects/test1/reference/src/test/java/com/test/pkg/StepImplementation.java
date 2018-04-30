@@ -1,4 +1,5 @@
-package com.test.pkg
+package com.test.pkg;
+
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import driver.Driver;
