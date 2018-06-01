@@ -1,6 +1,4 @@
-package $
-
-{package};
+package ${package};
 
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
