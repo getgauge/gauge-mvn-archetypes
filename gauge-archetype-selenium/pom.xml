@@ -5,12 +5,12 @@
     <parent>
         <groupId>com.thoughtworks.gauge.maven</groupId>
         <artifactId>gauge-mvn-archetypes</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>gauge-archetype-selenium</artifactId>
-    <version>1.5.1</version>
+    <version>1.5.2</version>
     <name>Archetype - gauge-archetype-selenium</name>
     <description>Archetype for Gauge Java with Selenium</description>
     <url>http://github.com/getgauge/gauge-mvn-archetypes</url>
