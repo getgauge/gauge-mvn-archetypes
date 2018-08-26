@@ -26,6 +26,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <archetype.version>3.0.1</archetype.version>
     </properties>
+         
+    <dependencies>
+         <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.10</version>
+         </dependency>
+    <dependencies>
 
     <build>
         <extensions>
