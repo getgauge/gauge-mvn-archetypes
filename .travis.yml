@@ -3,5 +3,5 @@ os:
 language: java
 jdk:
   - oraclejdk8
-script: 
-  - mvn clean install archetype:integration-test -Dgpg.skip
+install: true
+script: mvn clean install archetype:integration-test -Dgpg.skip
