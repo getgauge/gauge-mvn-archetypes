@@ -5,7 +5,7 @@
 
     <groupId>com.thoughtworks.gauge.maven</groupId>
     <artifactId>gauge-mvn-archetypes</artifactId>
-    <version>1.5.3</version>
+    <version>1.5.4</version>
     <packaging>pom</packaging>
 
     <name>Gauge Maven Archetypes</name>
