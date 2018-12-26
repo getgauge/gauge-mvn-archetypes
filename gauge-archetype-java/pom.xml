@@ -5,12 +5,12 @@
     <parent>
         <groupId>com.thoughtworks.gauge.maven</groupId>
         <artifactId>gauge-mvn-archetypes</artifactId>
-        <version>1.5.6</version>
+        <version>1.5.7</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>gauge-archetype-java</artifactId>
-    <version>1.5.6</version>
+    <version>1.5.7</version>
     <name>Archetype - gauge-archetype-java</name>
     <description>Archetype for Gauge Java</description>
     <url>http://github.com/getgauge/gauge-mvn-archetypes</url>
