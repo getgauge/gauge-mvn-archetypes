@@ -1,6 +1,6 @@
 # gauge-mvn-archetype
 
-One can initialize Gauge projects using several templates as described [here](http://getgauge.io/documentation/user/current/getting_started/creating_a_gauge_project.html). This repo contains the Maven archetypes for Gauge.
+One can initialize Gauge projects using several templates as described [here](https://docs.gauge.org/latest/installation.html#project-templates). This repo contains the Maven archetypes for Gauge.
 
 ## Maven archetypes for Gauge
 * gauge-archetype-java
