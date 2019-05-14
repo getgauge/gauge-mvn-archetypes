@@ -1,5 +1,7 @@
 # gauge-mvn-archetype
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
 One can initialize Gauge projects using several templates as described [here](https://docs.gauge.org/latest/installation.html#project-templates). This repo contains the Maven archetypes for Gauge.
 
 ## Maven archetypes for Gauge
