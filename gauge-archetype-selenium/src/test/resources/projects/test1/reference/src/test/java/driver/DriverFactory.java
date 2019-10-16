@@ -21,21 +21,21 @@ public class DriverFactory {
 
         switch (browser) {
             case "IE":
-                InternetExplorerDriverManager.getInstance().setup();
+                WebDriverManager.iedriver().setup();
                 return new InternetExplorerDriver();
             case "FIREFOX":
-                FirefoxDriverManager.getInstance().setup();
+                WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
             case "CHROME":
             default:
-	            ChromeDriverManager.getInstance().setup();
-	
+                WebDriverManager.chromedriver().setup();
+
 	            ChromeOptions options = new ChromeOptions();
 	            if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
 	                options.addArguments("--headless");
 	                options.addArguments("--disable-gpu");
 	            }
-	
+
 	            return new ChromeDriver(options);
         }
     }
