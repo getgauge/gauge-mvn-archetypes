@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class StepImplementation {
     @Step("Go to Gauge Get Started Page")
     public void gotoGetStartedPage() throws InterruptedException {
-        WebElement getStartedButton = Driver.webDriver.findElement(By.xpath("//a[@href='/getting-started-guide/we-start']"));
+        WebElement getStartedButton = Driver.webDriver.findElement(By.xpath("//a[@href='https://docs.gauge.org/getting_started/installing-gauge.html']"));
         getStartedButton.click();
 
         Gauge.writeMessage("Page title is %s", Driver.webDriver.getTitle());
@@ -19,7 +19,7 @@ public class StepImplementation {
 
     @Step("Ensure installation instructions are available")
     public void ensureInstallationInstructionsAreAvailable() throws InterruptedException {
-        WebElement instructions = Driver.webDriver.findElement(By.xpath("//a[@href='/getting-started-guide/quick-install']"));
+        WebElement instructions = Driver.webDriver.findElement(By.xpath("//a[@href='/writing-specifications.html']"));
         assertThat(instructions).isNotNull();
     }
 
