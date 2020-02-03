@@ -20,7 +20,7 @@ jobs:
 
       - name: setup
         run: |
-          export GPG_TTY=$(tty)
+          echo "::set-env name=GPG_TTY::$(tty)"
           echo -e "$MAVEN_GPG_SIGN_KEY" | gpg --batch --import -
           gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys $gpgkey
           rm -rf $HOME/.m2
