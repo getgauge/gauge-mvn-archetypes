@@ -1,9 +1,10 @@
-name: Publish
+name: Deploy
 
-on: [deployment]
+on: deployment
 
 jobs:
   build:
+    if: github.event.deployment.environment == 'production'
     name: Deploy to maven central
     runs-on: ubuntu-latest
     env:
