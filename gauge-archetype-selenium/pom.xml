@@ -12,25 +12,9 @@
     <artifactId>gauge-archetype-selenium</artifactId>
     <name>Archetype - gauge-archetype-selenium</name>
     <description>Archetype for Gauge Java with Selenium</description>
-    <url>http://github.com/getgauge/gauge-mvn-archetypes</url>
+    <url>https://github.com/getgauge/gauge-mvn-archetypes</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.1</version>
-                <configuration>
-                    <includeEmptyDirs>
-                        true
-                    </includeEmptyDirs>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>

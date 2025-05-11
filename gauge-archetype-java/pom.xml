@@ -12,7 +12,7 @@
     <artifactId>gauge-archetype-java</artifactId>
     <name>Archetype - gauge-archetype-java</name>
     <description>Archetype for Gauge Java</description>
-    <url>http://github.com/getgauge/gauge-mvn-archetypes</url>
+    <url>https://github.com/getgauge/gauge-mvn-archetypes</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
