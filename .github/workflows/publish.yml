@@ -24,7 +24,7 @@ jobs:
           echo -e "$MAVEN_GPG_SIGN_KEY" | gpg --batch --import -
           gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys $gpgkey
           rm -rf $HOME/.m2/settings.xml
-          echo -e "<settings>\n<servers>\n<server>\n<id>ossrh</id>\n<username>$username</username>\n<password>$password</password>\n</server>\n</servers>\n</settings>" > $HOME/.m2/settings.xml
+          echo -e "<settings>\n<servers>\n<server>\n<id>central</id>\n<username>$username</username>\n<password>$password</password>\n</server>\n</servers>\n</settings>" > $HOME/.m2/settings.xml
       - name: Deploy
         run: |
           mvn clean deploy -Dgpg.passphrase=$passphrase
