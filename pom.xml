@@ -24,7 +24,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <archetype.version>3.4.0</archetype.version>
+        <archetype.version>3.4.1</archetype.version>
     </properties>
 
     <build>
